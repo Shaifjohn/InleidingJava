@@ -8,6 +8,7 @@ public class opdracht82 extends Applet {
     String s;
     double getal;
     double a;
+    double uitkomst;
 
 
 
@@ -23,10 +24,6 @@ public class opdracht82 extends Applet {
         a = 1.21;
 
 
-
-
-
-
     }
 
     public void paint(Graphics g) {
@@ -37,8 +34,10 @@ public class opdracht82 extends Applet {
 
     class KnopListener implements ActionListener	{
         public void actionPerformed( ActionEvent e ) {
-            s = tekstvak.getText();
-
+            s = tekstvak.getText( );
+            double btw = Double.parseDouble ( s ); //Hier zeg je dat een double is.
+            btw = btw * a;
+            tekstvak.setText(btw + "");
             repaint();
 
 
