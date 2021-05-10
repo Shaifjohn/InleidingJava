@@ -14,6 +14,7 @@ public class opdracht82 extends Applet {
 
 
 
+
     public void init() {
         tekstvak = new TextField("", 30);
         knop = new Button("Ok");
