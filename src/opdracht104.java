@@ -3,7 +3,7 @@ import java.applet.*;
 import java.awt.event.*;
 
 
-public class opdracht103 extends Applet {
+public class opdracht104 extends Applet {
     TextField tekstvak;
     Label label;
     String s, tekst, tekst1;
@@ -74,7 +74,7 @@ public class opdracht103 extends Applet {
                 case 12:
                     tekst = "december";
                     break;
-                    default:
+                default:
                     tekst = "is het een schrikkeljaar?...";
                     break;
 
