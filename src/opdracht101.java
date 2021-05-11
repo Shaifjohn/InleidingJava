@@ -4,25 +4,29 @@ import java.awt.event.*;
 
 
 public class opdracht101 extends Applet {
-    int grootstegetal;
     int getal;
+    int hoogstegetal;
     TextField tekstvak;
     Label label;
+    int kleinstegetal;
+
 
 
     public void init() {
         tekstvak = new TextField("", 5);
         tekstvak.addActionListener( new VakListener() );
-        grootstegetal = 0;
+        hoogstegetal = 0;
+        kleinstegetal = 100000000;
 
-        label = new Label("zet getallen en zie welke groter is" );
+        label = new Label("zie het hoogste getal en het kleinste getal" );
 
         add( label );
         add( tekstvak );
     }
 
     public void paint(Graphics g) {
-        g.drawString("" + grootstegetal, 50, 45 );
+        g.drawString( "" + hoogstegetal, 50, 45 );
+        g.drawString("" + kleinstegetal, 50, 60);
     }
 
     class VakListener implements ActionListener {
@@ -30,17 +34,17 @@ public class opdracht101 extends Applet {
             String s;
 
             s = tekstvak.getText();
-             getal = Integer.parseInt( s );
+            getal = Integer.parseInt( s );
+            if ( getal > hoogstegetal ) {
+                hoogstegetal = getal;
 
-            if (getal > grootstegetal ){
-                grootstegetal = getal;
-
-                repaint();
             }
+            if (getal < kleinstegetal)  {
+                kleinstegetal = getal;
 
 
-
-
+            }
+            repaint();
         }
     }
 }
