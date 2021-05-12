@@ -7,12 +7,12 @@ public class opdracht111 extends Applet {
     public void init() {}
 
     public void paint(Graphics g) {
-        int teller = 10;
-        int y = 0;
+        int teller = 1;
+        int y = 1;
 
-        while(teller < 21) {
+        while(teller < 11) {
             y += 20;
-
+            g.drawLine(50 , y, 300, y );
             g.drawString("" + teller, 305, y );
             teller++;
         }
