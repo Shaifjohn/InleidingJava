@@ -21,7 +21,7 @@ public class opdracht104 extends Applet {
 
     public void paint(Graphics g) {
         g.drawString(tekst, 50, 60 );
-        g.drawString(tekst1, 50, 70);
+        g.drawString(tekst1, 50, 75);
     }
 
     class TekstvakListener implements ActionListener {
