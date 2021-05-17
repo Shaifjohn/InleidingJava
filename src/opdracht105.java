@@ -16,7 +16,7 @@ public class opdracht105 extends Applet {
     public void init() {
         knop = new Button("ok");
         tekstvak = new TextField("", 20);
-        label = new Label("Type het dagnummer en druk op enter");
+        label = new Label("Type het cijfer en druk op enter");
         tekstvak.addActionListener( new TekstvakListener() );
         knop.addActionListener( new knopListener() );
         tekst = "";
