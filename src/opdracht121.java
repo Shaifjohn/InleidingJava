@@ -11,7 +11,7 @@ public class opdracht121 extends Applet {
         totaal = 0;
 
         for (int teller = 0; teller < salaris.length; teller ++) {
-            salaris[teller] = 100 * teller + 100;
+             salaris[teller] = 100 * teller + 100;
         }
     }
 
