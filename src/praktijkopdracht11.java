@@ -8,7 +8,7 @@ public class praktijkopdracht11 extends Applet {
     int y;
     int x;
 
-    ;
+
 
     public void init() {
         breedte = 25;
